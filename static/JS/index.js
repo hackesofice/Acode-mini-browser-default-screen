@@ -103,7 +103,7 @@ mouse_in_out_listener(
 mouse_in_out_listener(
     ".box4",
     ".insta",
-    "https://media.telanganatoday.com/wp-content/upload…/05/Instagram-users-irked-with-the-new-update.jpg",
+    "https://cdn.abicart.com/shop/images/191459821-origpic-61f31d/ws89/120689/art89/h9821/instagram-logo.png",
     "https://blogassets.airtel.in/wp-content/uploads/2024/10/alexander-shatov-71Qk8ODIBko-unsplash.jpg"
 )
 
@@ -111,26 +111,26 @@ mouse_in_out_listener(
     ".box5",
     ".linkedin",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj32MyiT-AcHNOD9qfNNV8pHNhND7ZOUvBfQ&s",
-    "https://business.linkedin.com/etc.clientlibs/setti…ntlibs/resources/images/og-social-share-image.jpg"
+    "https://miro.medium.com/v2/resize:fit:1200/1*tmD_elC_QhRU0Cag2cKoKA.jpeg"
 )
 
 mouse_in_out_listener(
     ".box6",
-    "my-live-server",
+    ".my-live-server",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS51K4xCcIv096uiLZLQDRzHIvyjUpstEPP2g&s",
-    "https://i.ytimg.com/vi/1XwAPLe3kwg/maxresdefault.jpg"
+    "https://i0.wp.com/www.bomberbot.com/wp-content/uploads/2024/04/Visual-Studio-Code-Live-Server-Not-Working.jpg"
 )
 
 mouse_in_out_listener(
     ".box7",
     ".github",
-    "https://i0.wp.com/build5nines.com/wp-content/uploa…tions_Featured_Image_2024.jpg?fit=900%2C506&ssl=1",
-    "https://i0.wp.com/build5nines.com/wp-content/uploa…tions_Featured_Image_2024.jpg?fit=900%2C506&ssl=1"
+    "https://images.ctfassets.net/spoqsaf9291f/53kYM8iHg8JMkNM7uFq5DD/9446c583210cf8e1a1e3f72ebf1bcf0e/Connectors_for_GitHub__1_.png",
+    "https://cdn.prod.website-files.com/6344c9cef89d6f2270a38908/644158d0438c1513788efeb4_1366_2000.jpeg"
 )
 
 mouse_in_out_listener(
     ".box8",
-    "amazone",
+    ".amazon",
     "https://m.media-amazon.com/images/I/51HCHFclmmL.jpg",
     "https://www.shutterstock.com/image-photo/palo-alto-california-us-august-600nw-2507295771.jpg"
 )
@@ -150,3 +150,25 @@ mouse_in_out_listener(
 )
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////NOW ADDIMG THE 0EVENT LIOSTNERS TO REDIRECT TOI THE APPROPRIATE PAGES TO SHOW  RFELATED INFORMATION////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+let box1 = document.querySelector(".box1");
+// let box2 = document.querySelector("box2");
+// let box3 = document.querySelector("box3");
+// let box4 = document.querySelector("box4");
+// let box5 = document.querySelector("box5");
+// let box6 = document.querySelector("box4");
+// let box7 = document.querySelector("box4");
+// let box8 = document.querySelector("box4");
+// let box9 = document.querySelector("box4");
+// let box10 = document.querySelector("box4");
+
+    box1.addEventListener("click", ()=> {
+        console.log(window.location);
+        window.location.href = "/youtube";
+    });
