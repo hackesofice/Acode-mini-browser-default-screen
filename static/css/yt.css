@@ -7,6 +7,11 @@
         transform: rotate(360deg);
     }
 }
+#main-hader{
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(255, 94, 0);
+}
 h2{
     border: 1px solid black;
     width:40%;
@@ -50,5 +55,5 @@ h2{
 }
 
 #main-container{
-    margin-top: 50px;
+    padding-top:40px;
 }
