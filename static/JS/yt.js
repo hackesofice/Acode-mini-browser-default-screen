@@ -4,7 +4,6 @@ let loader = document.getElementById("loader");
     let observer = new IntersectionObserver((element, obs) => {
         if (element[0].isIntersecting){
            insert_new_videos(5);
-           obs.unobserve(loader)
         }
     });
 
