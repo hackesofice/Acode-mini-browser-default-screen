@@ -26,13 +26,15 @@ h2{
 
 #main-container{
    margin:auto;
-   width:90%;
+   width:100%;
    display:grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 }
 .video {
-    margin:10px;
+    height:250px;
+    width:300px;
+    margin-bottom:10px;
     border-radius: 10px;
     box-shadow: 0px 0px  20px black;
     transition: 120ms ease;
