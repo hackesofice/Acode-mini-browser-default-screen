@@ -1,16 +1,19 @@
 let main_container = document.getElementById("main-container");
 let loader = document.getElementById("loader");
 
-    let observer = new IntersectionObserver((element) => {
+    let observer = new IntersectionObserver((element, obs) => {
         if (element[0].isIntersecting){
            insert_new_videos(5);
+           obs.unobserve(loader)
         }
     });
 
+//document.addEventListener('scroll', ()=> {observer.observer(loader)})
 observer.observe(loader);
 
 // for now im using it without any agrument in future i'll use an list of youtube urls 
-function insert_new_videos(number_of_wanted_videos){
+async function insert_new_videos(number_of_wanted_videos){
+
         for (let i = 0; i < number_of_wanted_videos; i++){
             ask_for_url_from_server()
             .then(response =>{
@@ -25,13 +28,9 @@ function insert_new_videos(number_of_wanted_videos){
                         iframe.style.cssText = `width: 100%; height: 100%;`;
                         new_box.appendChild(iframe)
             }, 1000)});
-            // setTimeout(()=>{
-                
-
-            // }, 1000);
-
-            
+          
         }
+    observer.observe(loader);
 }
 
 async function ask_for_url_from_server(){
