@@ -33,7 +33,7 @@ h2{
 }
 .video {
     height:250px;
-    margin-bottom:10px;
+    margin-bottom:20px;
     border-radius: 10px;
     box-shadow: 0px 0px  20px black;
     transition: 120ms ease;
